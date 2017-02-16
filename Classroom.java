@@ -33,7 +33,7 @@ public class Classroom
 		return section;
 	}
 	
-	public Student getStudent(int i)
+	public Student getStudent(int i) //returns section[i]
 	{
 		return section[i];
 	}	
@@ -53,7 +53,7 @@ public class Classroom
 	}
 
 
-	public void setPeriod(int i)
+	public void setPeriod(int i) //takes in int i and sets the class field period to that
 	{
 		period = i;
 	}
@@ -77,7 +77,7 @@ public class Classroom
 	}	
 	
 	
-	public Student findOldest()
+	public Student findOldest()  //returns Student with the oldest age (class fields comparison)
 	{
 		Student oldest = section[0];
 		
