@@ -13,12 +13,12 @@ public class Student
 	
 	}
 	
-	public Student (int a, int g)
+	public Student (int a, int g) //default constructor
 	{
 		this.age = a;
 		this.grade = g;
 		name = "Jack";
-		numStudents++;
+		numStudents++; //increment numStudents class field
 	
 	}
 	
@@ -27,12 +27,12 @@ public class Student
 		age = a;
 		grade = g;
 		name = n;
-		numStudents++;
+		numStudents++; //increment numStudens class field
 	
 	}
 	
 	
-	
+	//accsessors
 	public int getAge()
 	{
 		return age;
@@ -53,7 +53,7 @@ public class Student
 		return numStudents;
 	}
 	
-	
+	//modifier methods
 	public void setAge (int num)
 	{
 		age = num;
@@ -61,7 +61,7 @@ public class Student
 	
 	public void setGrade (int num)
 	{
-		grade = num;
+		grade = num; //equate input parameter and class field
 	}
 	
 	public void setName (String n)
@@ -72,7 +72,7 @@ public class Student
 	
 	
 		
-	public String toString()
+	public String toString() //returns string representation of the class fields (which in turn describe the object)
 	{
 		return name + "(" + age + " years old, " + grade + "th grade)";
 	}
@@ -80,7 +80,7 @@ public class Student
 	
 	public static String findOlder(Student s1, Student s2)
 	{
-		if (s1.age > s2.age)
+		if (s1.age > s2.age) //no need for keyword this
 		{
 			return s1.name;
 		}
@@ -92,9 +92,9 @@ public class Student
 		
 	}
 	
-	public Student findOlder(Student s1)
+	public Student findOlder(Student s1) //Takes in Student object and returns the one with the older age (class field comparison)
 	{
-		if (s1.age > this.age)
+		if (s1.age > this.age) //need keyword this because the method is non-static
 		{
 			return s1;
 		}
