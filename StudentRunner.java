@@ -1,4 +1,4 @@
-public class StudentRunner
+public class StudentRunner  //class files have public methods, so they are accsessible from a separate (runner) class. If they were private (encapsulated), they would be unaccsessable from another class
 {
 	public static void main (String[] args)
 	{
